@@ -26,6 +26,12 @@ export default function Home() {
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
+        <div className={styles.videoContainer}>
+          <video autoPlay loop muted className={styles.backgroundVideo}>
+            <source src="/background.mp4" type="video/mp4" />
+          </video>
+          <div className={styles.overlay}></div>
+        </div>
         <main className={styles.main}>
           <Image
             className={styles.logo}
